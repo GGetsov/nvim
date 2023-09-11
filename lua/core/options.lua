@@ -53,7 +53,7 @@ opt.scrolloff = 5
 
 --shell setup
 
-if IS_WINDOWS then
+if ON_WINDOWS then
 	opt.shell = "powershell"
 	opt.shellcmdflag =
 		"-NoLogo -NoProfile -ExecutionPolicy RemoteSigned -Command [Console]::InputEncoding=[Console]::OutputEncoding=[System.Text.Encoding]::UTF8;"

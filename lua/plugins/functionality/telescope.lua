@@ -1,4 +1,7 @@
--- local fzf_dir = DIR("telescope-fzf")
+local build_cmd = "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release ; cmake --build build --config Release ; cmake --install build --prefix build"
+
+-- remove build_cmd if on Nixos
+build_cmd = not ON_NIXOS and build_cmd or nil
 
 return {
 	"nvim-telescope/telescope.nvim", -- fuzzy finder
@@ -6,7 +9,7 @@ return {
 		{
 			"nvim-telescope/telescope-fzf-native.nvim",
             dir = NIX_PKGS["telescope-fzf-native.nvim"],
-			--[[ build = "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release ; cmake --build build --config Release ; cmake --install build --prefix build", ]]
+			build = build_cmd, 
 		},
 		"nvim-telescope/telescope-file-browser.nvim",
 	},
