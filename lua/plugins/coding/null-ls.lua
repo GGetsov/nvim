@@ -1,3 +1,8 @@
+--Nixos handles it's own LS/Formatters/Linters 
+local needed = ON_NIXOS and {} or {
+    "stylua",
+}
+
 return {
     {
         "jose-elias-alvarez/null-ls.nvim",
@@ -47,7 +52,7 @@ return {
         config = function()
             local mason_null_ls = require("mason-null-ls")
             mason_null_ls.setup({
-                ensure_installed = { "stylua" },
+                ensure_installed = needed,
                 automatic_installation = false,
                 automatic_setup = true,
             })

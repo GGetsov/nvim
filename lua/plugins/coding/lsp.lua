@@ -18,7 +18,8 @@ local M = {
         lazy = true,
         dependencies = "williamboman/mason.nvim",
         opts = {
-            automatic_installation = true,
+            --LS on Nixos should be installed by nix (mainly inside a nix-shell)
+            automatic_installation = not ON_NIXOS,
         },
     },
     {
