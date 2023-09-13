@@ -4,5 +4,10 @@ pkgs.mkShell
 {
   nativeBuildInputs = with pkgs; [
     lua-language-server
+    stylua
   ];
+
+  shellHook = ''
+    nvim .
+  '';
 }
