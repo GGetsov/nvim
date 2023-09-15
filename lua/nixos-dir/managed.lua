@@ -1,1 +1,0 @@
-/nix/store/3xl8cpiln9rqfwf6s2psr6yiaw2d8yc2-home-manager-files/.config/nvim/lua/nixos-dir/managed.lua
