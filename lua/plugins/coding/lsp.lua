@@ -109,12 +109,6 @@ M.config = function()
         virtual_text = false,
         severity_sort = true,
     })
-
-    --python
-    M.lspconfig["pyright"].setup({
-        capabilities = M.capabilities,
-        on_attach = M.on_attach,
-    })
 end
 
 return M
