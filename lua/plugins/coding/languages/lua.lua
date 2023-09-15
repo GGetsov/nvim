@@ -29,6 +29,13 @@ return {
 					completion = {
 						callSnippet = "Replace",
 					},
+                     workspace = {
+                        checkThirdParty = false,
+                        library = {
+                            vim.env.VIMRUNTIME,
+                            "${3rd}/luv/library",
+                        },
+                    },
 					-- make the language server recognize "vim" global
 					diagnostics = {
 						globals = { "vim" },

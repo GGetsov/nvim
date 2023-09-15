@@ -9,7 +9,7 @@ return {
 		{
 			"nvim-telescope/telescope-fzf-native.nvim",
             dir = NIX_PKGS["telescope-fzf-native.nvim"],
-			build = build_cmd, 
+			build = build_cmd,
 		},
 		"nvim-telescope/telescope-file-browser.nvim",
 	},
