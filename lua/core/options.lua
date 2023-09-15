@@ -52,7 +52,6 @@ opt.imi = 0
 opt.scrolloff = 5
 
 --shell setup
-
 if ON_WINDOWS then
 	opt.shell = "powershell"
 	opt.shellcmdflag =
@@ -61,6 +60,4 @@ if ON_WINDOWS then
 	opt.shellpipe = "2>&1 | Out-File -Encoding UTF8 %s; exit $LastExitCode"
 	opt.shellquote = ""
 	opt.shellxquote = ""
-else
-	opt.shell = "zsh"
 end
