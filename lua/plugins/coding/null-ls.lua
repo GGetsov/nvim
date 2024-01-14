@@ -5,7 +5,7 @@ local needed = ON_NIXOS and {} or {
 
 return {
     {
-        "jose-elias-alvarez/null-ls.nvim",
+        "nvimtools/none-ls.nvim",
         -- enabled = false,
         dependencies = "williamboman/mason.nvim",
         lazy = true,
@@ -48,7 +48,7 @@ return {
     {
         "jayp0521/mason-null-ls.nvim", -- should be loaded last
         -- enabled = false,
-        dependencies = "jose-elias-alvarez/null-ls.nvim",
+        dependencies = "nvimtools/none-ls.nvim",
         config = function()
             local mason_null_ls = require("mason-null-ls")
             mason_null_ls.setup({

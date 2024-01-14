@@ -1,6 +1,6 @@
 return {
 	"nvim-lualine/lualine.nvim",
-	dependencies = "nvim-tree/nvim-web-devicons",
+	dependecies = "kyazdani42/nvim-web-devicons",
 	opts = {
 		options = {
 			theme = "catppuccin",
