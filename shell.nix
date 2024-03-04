@@ -6,7 +6,7 @@ pkgs.mkShell
     lua-language-server
     stylua
 
-    nixd
+    # nixd
   ];
 
   shellHook = ''
