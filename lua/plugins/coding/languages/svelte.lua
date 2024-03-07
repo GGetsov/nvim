@@ -3,7 +3,6 @@ vim.api.nvim_create_autocmd("Filetype", {
   pattern = { "svelte" },
   group = group,
   callback = function()
-    -- vim.notify("hey")
     local lsp = require("plugins.coding.lsp")
     if lsp.lspconfig == nil then
       lsp.config()
