@@ -1,3 +1,6 @@
-lua/.luarc.json
-lua/nix-plugins.lua
+# lazy.nvim specific file
 lazy-lock.json
+
+# nix specific
+parser/
+lua/nix-plugins.lua
