@@ -44,5 +44,9 @@ keymap.set("n", "<leader>tx", ":tabclose<CR>") -- close current tab
 keymap.set("n", "<leader>tn", ":tabn<CR>")     --  go to next tab
 keymap.set("n", "<leader>tp", ":tabp<CR>")     --  go to previous tab
 
+-- terminal management
+keymap.set("n", "<leader>ot", ":terminal<CR>i")
+keymap.set("t", "jk", "<C-\\><C-N>")
+
 -- vim-maximizer
 -- keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>") -- toggle split window maximization
