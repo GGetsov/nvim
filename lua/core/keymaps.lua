@@ -45,8 +45,8 @@ keymap.set("n", "<leader>tn", ":tabn<CR>", { silent = true })     --  go to next
 keymap.set("n", "<leader>tp", ":tabp<CR>", { silent = true })     --  go to previous tab
 
 -- terminal management
-keymap.set("n", "<leader>ot", ":tabnew<CR>:terminal<CR>", { silent = true })
-keymap.set("n", "<leader>tt", ":terminal<CR>", { silent = true })
+keymap.set("n", "<leader>ot", ":terminal<CR>", { silent = true })
+keymap.set("n", "<leader>tt", ":tabnew<CR>:terminal<CR>", { silent = true })
 keymap.set("t", "jk", "<C-\\><C-N>")
 
 -- vim-maximizer
