@@ -6,7 +6,7 @@ vim.api.nvim_create_autocmd({ "TermOpen" }, {
     vim.api.nvim_command("startinsert")
   end
 })
-vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter", }, {
+vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter", "FocusGained" }, {
   pattern = 'term://*',
   group = group,
   callback = function()
