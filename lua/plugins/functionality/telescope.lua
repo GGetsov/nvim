@@ -16,11 +16,11 @@ return {
   },
   init = function()
     -- telescope
-    Keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<CR>") -- find files within current working directory, respects .gitignore
-    Keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<CR>") -- find string in current working directory as you type
+    Keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<CR>")  -- find files within current working directory, respects .gitignore
+    Keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<CR>")   -- find string in current working directory as you type
     Keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<CR>") -- find string under cursor in current working directory
-    Keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<CR>")   -- list open buffers in current neovim instance
-    Keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<CR>") -- list available help tags
+    Keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<CR>")     -- list open buffers in current neovim instance
+    Keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<CR>")   -- list available help tags
     Keymap.set(
       "n",
       "<leader>fd",
@@ -30,10 +30,10 @@ return {
     )
 
     -- telescope git commands
-    Keymap.set("n", "<leader>gc", "<cmd>Telescope git_commits<CR>") -- list all git commits (use <cr> to checkout) ["gc" for git commits]
+    Keymap.set("n", "<leader>gc", "<cmd>Telescope git_commits<CR>")   -- list all git commits (use <cr> to checkout) ["gc" for git commits]
     Keymap.set("n", "<leader>gfc", "<cmd>Telescope git_bcommits<CR>") -- list git commits for current file/buffer (use <cr> to checkout) ["gfc" for git file commits]
-    Keymap.set("n", "<leader>gb", "<cmd>Telescope git_branches<CR>") -- list git branches (use <cr> to checkout) ["gb" for git branch]
-    Keymap.set("n", "<leader>gs", "<cmd>Telescope git_status<CR>")  -- list current changes per file with diff preview ["gs" for git status]
+    Keymap.set("n", "<leader>gb", "<cmd>Telescope git_branches<CR>")  -- list git branches (use <cr> to checkout) ["gb" for git branch]
+    Keymap.set("n", "<leader>gs", "<cmd>Telescope git_status<CR>")    -- list current changes per file with diff preview ["gs" for git status]
   end,
   cmd = "Telescope",
   config = function()
@@ -51,9 +51,9 @@ return {
       defaults = {
         mappings = {
           i = {
-            ["<C-k>"] = actions.move_selection_previous,                 -- move to prev result
-            ["<C-j>"] = actions.move_selection_next,                     -- move to next result
-            ["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist, -- send selected to quickfixlist
+            ["<C-k>"] = actions.move_selection_previous,                    -- move to prev result
+            ["<C-j>"] = actions.move_selection_next,                        -- move to next result
+            ["<C-q>"] = actions.smart_send_to_qflist + actions.open_qflist, -- send selected to quickfixlist
             ["qq"] = actions.close,
           },
         },
