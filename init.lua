@@ -1,4 +1,5 @@
 require("core.globals")
 require("core.options")
 require("core.keymaps")
+require("core.terminal")
 require("lazy_manager")
