@@ -5,11 +5,12 @@ return {
   priority = 1000,
   config = function()
     require("catppuccin").setup({
+      flavor = "macchiato",
+      transparent_background = true,
       integrations = {
         notify = true,
-        mini = true,
       },
     })
-    vim.cmd.colorscheme("catppuccin-macchiato")
+    vim.cmd.colorscheme("catppuccin")
   end,
 }
