@@ -26,6 +26,9 @@ return {
       "                                                     ",
     }
 
+    -- Header color equal to blue
+    dashboard.section.header.opts.hl = "AlphaHeader"
+
     -- Set menu
     dashboard.section.buttons.val = {
       dashboard.button("e", "  > New file", ":ene <BAR> startinsert <CR>"),

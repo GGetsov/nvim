@@ -2,5 +2,5 @@
 lazy-lock.json
 
 # nix specific
-parser/
+parser
 lua/nix-plugins.lua
