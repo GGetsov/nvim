@@ -14,9 +14,12 @@ local M = {
   },
   {
     "williamboman/mason-lspconfig.nvim",
-    -- enabled = false,
+    enabled = not ON_NIXOS,
     lazy = true,
-    dependencies = "williamboman/mason.nvim",
+    dependencies = {
+      "williamboman/mason.nvim",
+      enabled = not ON_NIXOS,
+    },
     opts = {
       --LS on Nixos should be installed by nix (mainly inside a nix-shell)
       automatic_installation = not ON_NIXOS,
