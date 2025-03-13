@@ -71,7 +71,7 @@ M.config = function()
     Keymap.set("n", "K", "<cmd>Lspsaga hover_doc<CR>", opts)                        -- show documentation for what is under cursor
     Keymap.set("n", "<leader>o", "<cmd>LSoutlineToggle<CR>", opts)                  -- see outline on right hand side
 
-    require("lsp-inlayhints").on_attach(client, bufnr)
+    -- require("lsp-inlayhints").on_attach(client, bufnr)
   end
 
   -- used to enable autocompletion (assign to every lsp server config)
